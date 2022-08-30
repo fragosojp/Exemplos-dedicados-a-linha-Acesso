@@ -73,7 +73,8 @@ setTimeout(function(){
 		});
 		request({
 			command: 'execute_actions',
-			data: {actions: [{action: 'door', parameters: 'door=1'}]},
+			data: {actions: [{action: 'door', parameters: 'door=1'}]}, //Caso o modelo seja  Relé iDAccess/iDFit/iDBox/iDUHF
+			//data: {action: "sec_box", parameters: "id=65793, reason=3"}]} //Caso o modelo seja  Relé iDFlex/iDAccess Pro/iDAccess Nano/iDUHF	
 			querystring: {session: data.session}
 		})
 	})
